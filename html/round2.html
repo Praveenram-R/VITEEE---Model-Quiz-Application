@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Quiz - Round 2</title>
+    <link rel="icon" href="../Images/titlleImg.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8c2b2979c7.js" crossorigin="anonymous"></script>
+    <script src="../JS/jquery-3.6.1.min.js" type="text/javascript"></script>
+</head>
+    
+<body style="margin-bottom: 60px;">
+    <nav class="navbar navbar-expand-lg headerBackgroundColor fixed-top shadow navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="mx-auto col-sm-2 col-md-3 col-lg-3 navbar-brand justify-content-start">
+                <img src="../Images/VITLogoEmblem.png" alt="VIT Emblem" 
+                    class="img-responsive d-inline-block VITEmblem" width="70px" height="70px">
+                <span class="logoStyle text-light h1 align-middle fw-bold">VIT</span>
+            </a>
+            <a href="#" class="mx-auto myFlex col-sm-8 col-md-8 col-lg-8 align-middle navbar-brand text-center text-light">
+                <span class="vitQuiz h3 textStyle fw-bold d-block">VITEEE - QUIZ</span>
+                <span class="vitAdmission d-none d-sm-block d-md-block d-lg-block d-xl-block h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions - Entrance Examination - 2023-24
+                </span>
+                <span class="d-block d-sm-none h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions 2023-24
+                </span>
+            </a>
+        </div>
+    </nav>
+    
+    <script src="../JS/script.js"></script>
+    <script>Countdown('timer', 15)</script>
+
+    <div class="contentBody">
+        <div class="container-fluid ">
+            <div class="row gx-2 text-center">
+                <div class="TabViewHead topFont">
+                    <div class="row h4 gy-5 quizStyle">
+                        <div class="col col-md card border-0 mb-2">
+                            <div class="card-header quizHeadStyle h3 loginBoxFill text-light">Round 2</div>
+                            <div class="card-body">
+                                <script>roundDetails("round2", "syllabus2", "duration2","mark2")</script>
+                                <p class="d-inline text-left ml-3">Syllabus: 
+                                    <div id="syllabus2" class="d-inline"></div>
+                                </p>
+                                <p class="d-inline text-left ml-3">Duration:
+                                    <div id="duration2" class="d-inline"></div>
+                                </p>
+                                <p class="d-inline text-left ml-3">Marks&emsp;:
+                                    <div id="mark2" class="d-inline"></div>
+                                </p>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                        <div class="col col-md card border-0 mb-2 quizStyle">
+                            <div class="card-header quizHeadStyle loginBoxFill h3 text-light">
+                                Student Information
+                            </div>
+                            <div class="card-body quizStyle">
+                                <p class="d-inline">Name: 
+                                    <div id="sname2" class="d-inline"></div>
+                                </p>
+                                <script>fillInfoPanel('sname2')</script>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row card-columns myRow h4 gx-2 quizStyle">
+                <div class="myCol MobileHid TabHid col-sm col-md-3 col-lg-3 border-0 quizStyle">
+                    <div class="row-reverse h4 gy-5 quizStyle">
+                        <div class="col card border-0 mb-2">
+                            <div class="card-header quizHeadStyle h3 loginBoxFill text-light">Round 2</div>
+                            <div class="card-body">
+                                <script>roundDetails("round2", "syllabus", "duration", "mark")</script>
+                                <p class="d-inline text-left ml-3">Syllabus: 
+                                    <div id="syllabus" class="d-inline"></div>
+                                </p>
+                                <p class="d-inline text-left ml-3">Duration:
+                                    <div id="duration" class="d-inline"></div>
+                                </p>
+                                <p class="d-inline text-left ml-3">Marks&emsp;:
+                                    <div id="mark" class="d-inline"></div>
+                                </p>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                        <div class="col card border-0 mb-2 quizStyle">
+                            <div class="card-header quizHeadStyle loginBoxFill h3 text-light">Student Information</div>
+                            <div class="card-body quizStyle">
+                                <p class="d-inline">Name: 
+                                    <div id="sname" class="d-inline"></div>
+                                </p>
+                                <script>fillInfoPanel('sname')</script>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>fetchQn("round2",1)</script>
+
+                <div class="myCol col col-sm-8 col-md-8 col-lg-6 card border-0 quizStyle">
+                    <div class="MobileViewHead topFont">
+                        <script>Countdown('timerMobile', 15)</script>
+                        <div id="mobRound" style="border-bottom: 8px solid rgb(36, 85, 163);">
+                            <p class="text-center loginBoxFill" style="padding:5px;color:white;">Round 2</p>
+                            <p class="d-inline text-left" style="margin-left: 20px;">Syllabus: 
+                                <div id="syllabus1" class="d-inline"></div>
+                            </p>
+                            <p class="d-inline text-left" style="margin-left: 20px;">Duration:
+                                <div id="duration1" class="d-inline"></div>
+                            </p>
+                            <p class="d-inline text-left" style="margin-left: 20px;">Total Questions:
+                                <div id="qns" class="d-inline"></div>
+                            </p>
+                            <script>mobroundDetails("round2", "syllabus1", "duration1", "qns")</script>
+                        </div>
+                        <div id="usertimer">
+                            <div class="float-start" id="mobUser" style="padding:3px;border: 1px solid rgb(36, 85, 163);">
+                                <i class="fa-solid fa-user"></i>
+                                <span id="sname1"></span>
+                                <script>fillInfoPanel('sname1')</script>
+                            </div>
+                            <div class="float-end" id="mobTimer" style="padding:3px;border: 1px solid rgb(36, 85, 163);">
+                                <i class="fa-solid fa-clock"></i>
+                                Time Left: <span id="timerMobile"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-header quizHeadStyle h3 loginBoxFill text-light">
+                        <p class="d-inline" id="qnoTag">Question No: 
+                            <div id="qno" class="d-inline"></div>
+                        </p>
+                    </div>
+                    <div class="card-body ml-5 roundFormcard" id="RoundCard">
+                        <div class="fw-bold h3 quizStyle" id="question"></div>
+                        <form action="home.html" id="roundForm" class="roundForm quizStyle">
+                            <div class="form-check">
+                                <input type="hidden" value="round2" id="roundName">
+                                <input type="radio" class="form-check-input answers" id="option1" name="answers" value="1">
+                                <label id="option1label" class="form-check-label" for="option1"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input answers" id="option2" name="answers" value="2">
+                                <label id="option2label" class="form-check-label" for="option2"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input answers" id="option3" name="answers" value="3">
+                                <label id="option3label" class="form-check-label" for="option3"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input answers" id="option4" name="answers" value="4">
+                                <label id="option4label" class="form-check-label" for="option4"></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer loginBoxFill quizStyle">
+                        <button onclick="goPrev('round2')" type="button" class="btn btn-danger fw-bold h4 float-start" id="prev">
+                            Prev
+                        </button>
+                        <button onclick="goNext('round2')" class="btn btn-success fw-bold h4 float-end" id="next" type="button">
+                            Next
+                        </button>
+                        <button class="btn btn-success fw-bold h4 float-end" style="display: none;" id="submit" type="submit">
+                            <a href="../html/round3.html" style="text-decoration: none;color: white;">Go</a>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="myCol MobileHid col-sm-4 col-md-4 col-lg-3 border-0 logoStyle">
+                    <div class="row-reverse">
+                        <div class="col card border-0 mb-2">
+                            <div class="card-header quizHeadStyle text-light h3 loginBoxFill">
+                                <i class="fa-solid fa-clock"></i>     Time Left
+                            </div>
+                            <div class="card-body">
+                                <p id="timer" class="text-center"></p>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                        <div class="col navButton card border-0 mb-2">
+                            <div class="card-header quizHeadStyle text-light h3 loginBoxFill">Navigation Bar</div>
+                            <div class="card-body text-center">
+                                <button onclick="navToLoad('round2',1)" class="navigationButton" id="navbutton1">1</button>
+                                <button onclick="navToLoad('round2',2)" class="navigationButton" id="navbutton2">2</button>
+                                <button onclick="navToLoad('round2',3)" class="navigationButton" id="navbutton3">3</button>
+                                <button onclick="navToLoad('round2',4)" class="navigationButton" id="navbutton4">4</button>
+                                <button onclick="navToLoad('round2',5)" class="navigationButton" id="navbutton5">5</button>
+                            </div>
+                            <div class="card-footer loginBoxFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="fixed-bottom text-center text-light py-0 footercolor">
+        <span class="small">Copyright © 
+            <span class="trim d-none d-sm-inline-block">2022</span>
+                    Software Development Cell, VIT, Vellore-632 014.
+        </span>
+    </div>
+    
+    </body>
+</html>

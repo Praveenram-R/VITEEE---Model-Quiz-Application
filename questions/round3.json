@@ -1,0 +1,57 @@
+{
+    "syllabus":"General Knowledge",
+    "duration":"8 Minutes",
+    "marks" : "20 Marks",
+      "qn": [
+        {
+          "qnNo": 1,
+          "question": "Identify the Logo given below...",
+          "logo" : "/Images/kfc.png",
+          "option1": "KFC",
+          "option2": "Mc Donalds",
+          "option3": "Dominos",
+          "option4": "None of the above",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 2,
+          "question": "Identify the Logo given below...",
+          "logo" : "/Images/yamaha.png",
+          "option1": "Honda",
+          "option2": "Maruti",
+          "option3": "Yamaha",
+          "option4": "Hero",
+          "ans": "option3"
+        },
+        {
+          "qnNo": 3,
+          "question": "Identify the Logo given below...",
+          "logo" : "/Images/wiki.png",
+          "option1": "Google",
+          "option2": "Wikipedia",
+          "option3": "Encyclopedia",
+          "option4": "None of the given",
+          "ans": "option2"
+        },
+        {
+          "qnNo": 4,
+          "question": "Identify the Logo given below...",
+          "logo" : "/Images/playstation.png",
+          "option1": "Play Station",
+          "option2": "Adobe",
+          "option3": "PhotoShop",
+          "option4": "Chrome",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 5,
+          "question": "Identify the Logo given below...",
+          "logo" : "/Images/apple.png",
+          "option1": "Microsoft",
+          "option2": "Meta",
+          "option3": "Netflix",
+          "option4": "Apple",
+          "ans": "option4"
+        }
+      ]
+  }

@@ -1,0 +1,52 @@
+{
+    "syllabus":"General Knowledge",
+    "duration":"15 Minutes",
+    "marks" : "10 Marks",
+      "qn": [
+        {
+          "qnNo": 1,
+          "question": "Which among the following temples does not belong to the Chola Empire?",
+          "option1": "Brihadishwara",
+          "option2": "Koranganatha",
+          "option3": "Kailashanatha",
+          "option4": "Airavateshwar",
+          "ans": "option3"
+        },
+        {
+          "qnNo": 2,
+          "question": "Who had discovered the Boolean algebra?",
+          "option1": "George Boole",
+          "option2": "Charles Babbage",
+          "option3": "Augusta Ada Byron",
+          "option4": "Herman Hollerith",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 3,
+          "question": "Which among the following is India’s deepest landlocked and protected port?",
+          "option1": "Vishakhapatnam",
+          "option2": "Chennai",
+          "option3": "Paradeep",
+          "option4": "Kandla",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 4,
+          "question": "Which vitamins help in the clotting of blood?",
+          "option1": "Vitamin - B",
+          "option2": "Vitamin - C",
+          "option3": "Vitamin - K",
+          "option4": "Vitamin - A",
+          "ans": "option3"
+        },
+        {
+          "qnNo": 5,
+          "question": "Who does the appointment of the Prime Minister?",
+          "option1": "Lok Saba",
+          "option2": "The President",
+          "option3": "Election",
+          "option4": "None of the above",
+          "ans": "option2"
+        }
+      ]
+  }

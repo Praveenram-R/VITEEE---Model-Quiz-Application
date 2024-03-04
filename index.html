@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITEEE - Quiz</title>
+    <link rel="icon" href="Images/titlleImg.png" type="image/png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8c2b2979c7.js" crossorigin="anonymous"></script>
+    <script src="JS/jquery-3.6.1.min.js"></script>
+</head>
+<body style="margin-top: 70px;">
+    <nav class="navbar navbar-expand-lg headerBackgroundColor fixed-top shadow navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="mx-auto col-sm-2 col-md-3 col-lg-3 navbar-brand justify-content-start">
+                <img src="Images/VITLogoEmblem.png" alt="VIT Emblem" 
+                    class="img-responsive d-inline-block VITEmblem" width="70px" height="70px">
+                <span class="logoStyle text-light h1 align-middle fw-bold">VIT</span>
+            </a>
+            <a href="#" class="mx-auto myFlex col-sm-8 col-md-8 col-lg-8 align-middle navbar-brand text-center text-light">
+                <span class="vitQuiz h3 textStyle fw-bold d-block">VITEEE - QUIZ</span>
+                <span class="vitAdmission d-none d-sm-block d-md-block d-lg-block d-xl-block h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions - Entrance Examination - 2023-24
+                </span>
+                <span class="d-block d-sm-none h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions 2023-24
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 100px;">
+        <div class="row">
+            <div class="mx-auto shadow-lg col-10 col-sm-8 col-md-6 col-lg-6 col-xl-4 p-0 mt-5">
+                <div class="card border-0">
+                    <div class="card-header loginBoxFill">
+                        <h4 class=" text-light">
+                            Student Login
+                        </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="html/home.html" id="myForm" name="myForm" onsubmit="return loginValidation()">
+                            <div class="input-group mt-3 mb-3">
+                                <input name="uname" type="text" class="form-control" placeholder="Student Name"
+                                    onkeyup="this.value= this.value.toUpperCase()" autocomplete="off">                                
+                                <span class="input-group-text">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <p id="nameValid" class="text-danger fw-bold"></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="VIT Student Mail-ID" name="mail">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <p id="mailValid" class="fw-bold text-danger"></p>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" id="pwd" placeholder="Password Provided from VIT" name="pwd">
+                                <button class="btn btn-outline-secondary" onclick="eyeButton()">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <script>
+                                    function eyeButton(){
+                                        var pwd = document.getElementById("pwd");
+                                        if(pwd.type === "password"){
+                                            pwd.type = "text";
+                                        } else { pwd.type="password";}
+                                    }
+                                </script>
+                            </div>
+                            <div>
+                                <p id="pwdValid" class="fw-bold text-danger"></p>
+                            </div>
+                            <script src="JS/script.js"></script>
+                            <button id="loginSubmit" onclick="return loginValidation()" class="btn btn-success float-end fw-bold text-light" type="submit">
+                                Login 
+                            </button>
+                        </form>
+                    </div>
+                    <div class="card-footer loginBoxFill">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bottom text-center text-light py-0 footercolor">
+        <span class="small">Copyright © 
+            <span class="trim d-none d-sm-inline-block">2022</span>
+            Software Development Cell, VIT, Vellore-632 014.
+        </span>
+    </div>
+</body>
+</html>

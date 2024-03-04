@@ -1,0 +1,327 @@
+body{
+    margin-top: 90px; 
+}
+
+.contentBody{margin-top: 120px;}
+
+.headerBackgroundColor {
+    background: rgb(36, 85, 163);
+    background: linear-gradient(130deg, rgba(36, 85, 163, 1) 23%, rgba(52, 151, 219, 1) 52%, rgba(52, 142, 219, 1) 58%, rgba(52, 131, 219, 1) 65%, rgba(40, 116, 166, 1) 74%);
+}
+
+.footercolor{
+    background: rgb(6, 47, 112);
+    background: linear-gradient(130deg, rgba(6, 47, 112, 1) 23%, rgb(16, 98, 153) 52%, rgba(16, 142, 219, 1) 58%, rgba(52, 131, 219, 1) 65%, rgba(40, 116, 166, 1) 74%);
+}
+
+.logoStyle{
+    font-family: Times;
+}
+.textStyle{
+    font-family: Times;
+}
+
+.loginBoxFill{
+    background-color: rgb(36, 85, 163);
+}
+
+.myRow .card-header{
+    text-align: center;
+}
+
+.quizStyle{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.roundFormcard{
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+#question{
+    margin-bottom: 18px;
+}
+
+.roundForm{
+    font-size: 25px;
+}
+
+.roundForm .form-check{
+    margin-bottom: 10px;
+}
+
+.form-check-input{
+    font-size: 1.2rem;
+    align-tracks: center;
+    text-align: center;
+}
+
+#prev{
+    display: none;
+}
+
+.navigationButton{
+    cursor: pointer;
+    border: 0px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    width: auto;
+    background-color: rgb(36, 85, 163);
+    color: white;
+    margin: 5px 2px;
+}
+
+.navigationButton:hover{
+    background-color: white;
+    color: black;
+}
+
+#mobTimer{display: none;}
+
+#mobRound{display: none;}
+
+#mobUser{display: none;}
+
+.TabViewHead{display: none;}
+
+@media (max-width: 322px){
+    body{
+        margin-top: 0px;
+    }
+    .contentBody{margin-top: 50px;}
+    .VITEmblem {
+        width: 45px;
+        height: 45px;
+    }
+    #roundbody{
+        margin-top: 70px;
+    }
+    .logoStyle{
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .InstructionHead .logoStyle,
+    .InstructionBody .logoStyle, 
+    .InstructionFoot .logoStyle{
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .textStyle{
+        font-family: Times;
+        font-size: 8px;
+    }
+
+    input.form-control::placeholder{
+        font-size: 16px;
+    }
+
+    span.hid{
+        display: none;
+    }
+
+    .mobileView{
+        display: block;
+    }
+
+    .navButton{
+        display: none;
+    }
+
+    /*temp*/
+    .MobileHid{
+        display: none;
+    }
+
+    #mobTimer{
+        /* border: 1px solid black; */
+        padding: 2px;
+        display: inline-block;
+    }
+
+    #mobRound{
+        display: block;
+        /* border: 1px solid black; */
+        padding: 2px;
+    }
+
+    .MobileViewHead{ 
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contentBody{margin-top: 100px;}
+
+    .topFont{
+        font-size: 17px;
+    }
+
+    #usertimer{margin-top: 25px;}
+
+
+    /*temp*/
+}
+
+@media screen and (max-width:395px) {
+    #mobUser{ font-size: 18px;} 
+
+    #mobTimer{ font-size: 18px;}
+}
+
+@media screen and (max-width: 320px){
+    #mobUser{ font-size: 15px;} 
+
+    #mobTimer{ font-size: 15px;}
+}
+
+@media screen and (min-width: 323px) {
+    
+    .row1 .col-text{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    /*temp*/
+    .MobileHid{
+        display: none;
+    }
+
+    #mobTimer{
+        /* border: 1px solid black; */
+        padding: 2px;
+        display: inline-block;
+    }
+
+    #mobRound{
+        display: block;
+        padding: 2px;
+    }
+
+    #mobUser{display: block;}
+
+    .MobileViewHead{ 
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #usertimer{margin-top: 25px;}
+
+    .contentBody{margin-top: 100px;}
+    .TabViewHead{display: none;}
+    /*temp*/
+}
+
+@media screen and (max-width:367px){
+    #mobUser{display: none;}
+
+    #usertimer{margin-top: 25px;}
+}
+
+@media screen and (max-width: 576px) {
+
+    .logoStyle {
+        font-family: Times;
+        font-size: 22px;
+    }
+
+    .InstructionHead .logoStyle,
+    .InstructionBody .logoStyle, 
+    .InstructionFoot .logoStyle{
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .textStyle{
+        font-family: Times;
+        font-size: 12px;
+    }
+
+    .VITEmblem {
+        width:  40px;
+        height: 40px;
+    }
+
+    /*temp*/
+    .MobileHid{
+        display: none;
+    }
+
+    #mobTimer{
+        /* border: 1px solid black; */
+        padding: 2px;
+        display: inline-block;
+    }
+
+    #mobRound{
+        display: block;
+        padding: 2px;
+    }
+
+    #mobUser{display: block;}
+
+    .MobileViewHead{ 
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #usertimer{margin-top: 25px;}
+
+    .contentBody{margin-top: 100px;}
+
+    .TabHid{display: none;}
+
+    .TabViewHead{display: none;}
+    /*temp*/
+}
+
+@media screen and (min-width:577px){
+    .VITEmblem {
+        width:  45px;
+        height: 45px;
+    }
+    .TabHid{display: none;}
+
+    .TabViewHead{display: block;}
+}
+
+@media screen and (max-width: 767px){
+    .textStyle{
+        font-family: Times;
+        font-size: 18px;
+    }
+    .quizStyle{
+        font-family: Times;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .VITEmblem {
+        width:  70px;
+        height: 70px;
+    }
+    
+    .quizStyle{
+        font-size: 23px;
+    }
+
+    /* .roundFormcard{height: 200px;} */
+
+}
+
+@media screen and (min-width:850px){
+    .TabHid{display: block;}
+
+    .TabViewHead{display: none;}
+}
+
+@media screen and (min-width: 1024px) {
+    .quizStyle{
+        font-size: 23px;
+    }
+}

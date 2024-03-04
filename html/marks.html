@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Marks</title>
+    <link rel="icon" href="/Images/titlleImg.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8c2b2979c7.js" crossorigin="anonymous"></script>
+    <script src="../JS/jquery-3.6.1.min.js" type="text/javascript"></script>
+</head>
+    
+<body style="margin-bottom: 60px;">
+    <nav class="navbar navbar-expand-lg headerBackgroundColor fixed-top shadow navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="mx-auto col-sm-2 col-md-3 col-lg-3 navbar-brand justify-content-start">
+                <img src="../Images/VITLogoEmblem.png" alt="VIT Emblem" 
+                    class="img-responsive d-inline-block VITEmblem" width="70px" height="70px">
+                <span class="logoStyle text-light h1 align-middle fw-bold">VIT</span>
+            </a>
+            <a href="#" class="mx-auto myFlex col-sm-8 col-md-8 col-lg-8 align-middle navbar-brand text-center text-light">
+                <span class="vitQuiz h3 textStyle fw-bold d-block">VITEEE - QUIZ</span>
+                <span class="vitAdmission d-none d-sm-block d-md-block d-lg-block d-xl-block h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions - Entrance Examination - 2023-24
+                </span>
+                <span class="d-block d-sm-none h4 fw-bold textStyle hid text-light text-center">
+                    VIT Admissions 2023-24
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-6 logoStyle">
+                <div class="card border-0 shadow">
+                    <div class="card-header text-center h3 loginBoxFill text-light">
+                        Marks
+                    </div>
+                    <div class="card-body h5 table-responsive-sm table-responsive-md table-responsive-lg">
+                        <table class="table table-bordered table-striped">
+                            <thead class="text-center">
+                                <th scope="col">Round No.</th>
+                                <th scope="col">Round Name</th>
+                                <th scope="col">Maximum Mark</th>
+                                <th scope="col">Scored Mark</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" style="text-align: center!important;">1</th>
+                                    <td>General Science</td>
+                                    <td style="text-align:right!important;">20</td>
+                                    <td id="round1" style="text-align:right!important;">
+                                        <script>
+                                            document.getElementById("round1").innerHTML = localStorage.getItem("round1")*2;
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="text-align: center!important;">2</th>
+                                    <td>General Knowledge</td>
+                                    <td style="text-align:right!important;">10</td>
+                                    <td id="round2" style="text-align:right!important;">
+                                        <script>
+                                            document.getElementById("round2").innerHTML = localStorage.getItem("round2");
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="text-align: center!important;">3</th>
+                                    <td>Logo</td>
+                                    <td style="text-align:right!important;">20</td>
+                                    <td id="round3" style="text-align:right!important;">
+                                        <script>
+                                            document.getElementById("round3").innerHTML = localStorage.getItem("round3")*2;
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td><b>Overall</b></td>
+                                    <td style="text-align:right!important;"><b>50</b></td>
+                                    <td id="total" style="text-align:right!important;" class="fw-bold">
+                                        <script>
+                                            var total = 
+                                            Number(localStorage.getItem("round1")*2)+ Number(localStorage.getItem("round3")*2) + Number(localStorage.getItem("round2"));
+                                            document.getElementById("total").innerHTML = total;
+                                        </script>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="h3 float-end">Cumulative Score: <span id="cscore"></span></div>
+                        <script>
+                            total = total/3;
+                            document.getElementById("cscore").innerHTML = total;
+                        </script>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+        <div class="row logoStyle mt-5">
+            <div class="col-6 mx-auto fw-bold">
+                <div class="h4 text-center" id="vellore" style="display: none;">
+                    Congratulations!!!<br>
+                    As you scored 9.5 and above, You get Admission In VIT, Vellore.
+                </div>
+                <div class="h4 text-center" id="amravati" style="display: none;">
+                    Congratulations!!!<br>
+                    As your score lies between 6.5 to 7.4, You get Admission In VIT, Amravati, AP.
+                </div>
+                <div class="h4 text-center" id="chennai" style="display: none;">
+                    Congratulations!!!<br>
+                    As your score lies between 7.5 to 9.4, You get Admission In VIT, Chennai.
+                </div>
+                <div class="h4 text-center" id="noseat" style="display: none;">
+                    Better Luck Next Time!!!<br>
+                    As you scored below 6.5, You are not able to get Admission In VIT.
+                </div>
+                <a href="../index.html" class="text-light"><button onclick="eraseAllTemp()" class="float-end btn btn-primary">Logout</button></a>
+                
+            </div>
+            <script>
+                console.log(total);
+                if(total >= 9.5){
+                    document.getElementById("vellore").style.display = "block";
+                }else if(total < 9.5 && total >= 7.5){
+                    document.getElementById("chennai").style.display = "block";
+                } else if(total < 7.5 && total >= 6.5){
+                    document.getElementById("amravati").style.display = "block";
+                } else{
+                    document.getElementById("noseat").style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="fixed-bottom text-center text-light py-0 footercolor">
+        <span class="small">Copyright © 
+            <span class="trim d-none d-sm-inline-block">2022</span>
+                    Software Development Cell, VIT, Vellore-632 014.
+        </span>
+    </div>
+
+</body>
+</html>

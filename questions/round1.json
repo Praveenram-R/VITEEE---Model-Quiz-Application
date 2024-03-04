@@ -1,0 +1,97 @@
+{
+    "syllabus":"General Science",
+    "duration":"15 Minutes",
+    "marks" : "20 Marks",
+      "qn": [
+        {
+          "qnNo": 1,
+          "question": "What does DNA stand for?",
+          "option1": "Deoxyribonucleic acid",
+          "option2": "Dysprosicnitric acid",
+          "option3": "Dinucleic acid",
+          "option4": "Dinitric acid",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 2,
+          "question": "Which of the following metals forms an amalgam with other metals?",
+          "option1": "Tin",
+          "option2": "Mercury",
+          "option3": "Lead",
+          "option4": "Zinc",
+          "ans": "option2"
+        },
+        {
+          "qnNo": 3,
+          "question": "Which of the following is a non metal that remains liquid at room temperature?",
+          "option1": "Phosphorous - P",
+          "option2": "Bromine - Br",
+          "option3": "Chlorine - Cl",
+          "option4": "Helium - He",
+          "ans": "option2"
+        },
+        {
+          "qnNo": 4,
+          "question": "Biggest Planet in Solar System",
+          "option1": "Jupiter",
+          "option2": "Mars",
+          "option3": "Earth",
+          "option4": "Mercury",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 5,
+          "question": "The metal present in the chlorophyll is",
+          "option1": "Calcium",
+          "option2": "Aluminium",
+          "option3": "Zinc",
+          "option4": "Magnesium",
+          "ans": "option4"
+        },
+        {
+          "qnNo": 6,
+          "question": "The number of Chromosomes in the human gene is",
+          "option1": 23,
+          "option2": 48,
+          "option3": 46,
+          "option4": 36,
+          "ans": "option3"
+        },
+        {
+          "qnNo": 7,
+          "question": "On which one of the following conservation laws, does a rocket work?",
+          "option1": "Mass",
+          "option2": "Energy",
+          "option3": "Linear Momemtum",
+          "option4": "Angular Momemtum",
+          "ans": "option4"
+        },
+        {
+          "qnNo": 8,
+          "question": "KiloWatt is the unit of",
+          "option1": "Energy",
+          "option2": "Velocity",
+          "option3": "Power",
+          "option4": "Force",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 9,
+          "question": "Use of Diode is",
+          "option1": "Purification",
+          "option2": "Amplification",
+          "option3": "Modulation",
+          "option4": "Oscilation",
+          "ans": "option1"
+        },
+        {
+          "qnNo": 10,
+          "question": "High Directional Light Beam is called",
+          "option1": "Laser",
+          "option2": "Grazer",
+          "option3": "Lightwave",
+          "option4": "Maser",
+          "ans": "option1"
+        }
+      ]
+  }
