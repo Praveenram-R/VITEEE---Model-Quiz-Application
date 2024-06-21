@@ -6,7 +6,7 @@
         {
           "qnNo": 1,
           "question": "Identify the Logo given below...",
-          "logo" : "../Images/kfc.png",
+          "logo" : "./Images/kfc.png",
           "option1": "KFC",
           "option2": "Mc Donalds",
           "option3": "Dominos",
@@ -16,7 +16,7 @@
         {
           "qnNo": 2,
           "question": "Identify the Logo given below...",
-          "logo" : "../Images/yamaha.png",
+          "logo" : "./Images/yamaha.png",
           "option1": "Honda",
           "option2": "Maruti",
           "option3": "Yamaha",
@@ -26,7 +26,7 @@
         {
           "qnNo": 3,
           "question": "Identify the Logo given below...",
-          "logo" : "../Images/wiki.png",
+          "logo" : "./Images/wiki.png",
           "option1": "Google",
           "option2": "Wikipedia",
           "option3": "Encyclopedia",
@@ -36,7 +36,7 @@
         {
           "qnNo": 4,
           "question": "Identify the Logo given below...",
-          "logo" : "../Images/playstation.png",
+          "logo" : "./Images/playstation.png",
           "option1": "Play Station",
           "option2": "Adobe",
           "option3": "PhotoShop",
@@ -46,7 +46,7 @@
         {
           "qnNo": 5,
           "question": "Identify the Logo given below...",
-          "logo" : "../Images/apple.png",
+          "logo" : "./Images/apple.png",
           "option1": "Microsoft",
           "option2": "Meta",
           "option3": "Netflix",
