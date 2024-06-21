@@ -6,7 +6,7 @@
         {
           "qnNo": 1,
           "question": "Identify the Logo given below...",
-          "logo" : "./Images/kfc.png",
+          "logo" : "../Images/kfc.png",
           "option1": "KFC",
           "option2": "Mc Donalds",
           "option3": "Dominos",
