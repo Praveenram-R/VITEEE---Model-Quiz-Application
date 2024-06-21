@@ -59,6 +59,7 @@ function loginValidation(){
     return status;
 }
 let x;
+
 //Countdown Timer
 function Countdown(elename, limit){
     var countDownDate = (new Date().getTime())+(limit*60*1000);
@@ -181,7 +182,7 @@ function goNext(roundName){
         if(temp){ selectedAnswer[Number(qno)-1] = temp;}
         var curr = 0;
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "/questions/"+roundName+".json");
+        xmlhttp.open("GET", "../questions/"+roundName+".json");
         xmlhttp.send();
         xmlhttp.onload = function() {
             const Obj = JSON.parse(this.responseText);
@@ -255,7 +256,7 @@ function nextToSubmit(qno, roundName){
         const myObj = JSON.parse(this.responseText);
         qnslength = myObj.qn.length;
     }
-    xmlhttp.open("GET", "/questions/"+roundName+".json");
+    xmlhttp.open("GET", "../questions/"+roundName+".json");
     xmlhttp.send();
     if(qno == qnslength){
         document.getElementById("next").innerHTML = "Submit";
@@ -270,7 +271,7 @@ function nextToSubmit(qno, roundName){
 
 function correction(roundName){
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "/questions/"+roundName+".json");
+    xmlhttp.open("GET", "../questions/"+roundName+".json");
     xmlhttp.send();
     var temp = 0;
     xmlhttp.onload = function() {
